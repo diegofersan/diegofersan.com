@@ -4,13 +4,17 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
 } from "remix";
-import type { MetaFunction } from "remix";
+import type { MetaFunction, LinksFunction } from "remix";
 
-export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
-};
+import output from "./output.css";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: output },
+];
+
+export const meta: MetaFunction = () => ({ title: "Remix Boilerplate" });
 
 export default function App() {
   return (
