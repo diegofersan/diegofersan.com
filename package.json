@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "remix-app-template",
-  "description": "",
+  "name": "remix-netlify-tailwind-boilerplate",
+  "description": "Simple Remix boilerplate using TailwindCSS",
   "license": "",
   "scripts": {
     "build": "npm run build:css && remix build",
